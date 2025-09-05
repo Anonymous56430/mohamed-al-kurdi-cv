@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Al-Kurdi - Barista | CV & Portfolio</title>
+  <meta name="description" content="Mohamed Al-Kurdi: Experienced Barista. CV and Portfolio with skills, experience, and contact information.">
+  <meta name="keywords" content="Mohamed Al-Kurdi, Barista, Coffee, CV, Portfolio, Jordan, Amman">
+  <meta name="author" content="Mohamed Al-Kurdi">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    body {
+      font-family: "Cairo", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #eee;
+      line-height: 1.7;
+      overflow-x: hidden;
+      background: linear-gradient(-45deg, #1a1c20, #2c2f33, #1a1c20, #2c2f33);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+    }
+
+    .location {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.6);
+      padding: 12px 20px;
+      border-radius: 16px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #00c6ff;
+      box-shadow: 0 0 40px rgba(0,198,255,0.8);
+      transition: transform 0.3s;
+    }
+
+    header img:hover { transform: scale(1.12); }
+
+    header h1 { margin: 20px 0 10px; font-size: 40px; color: #00c6ff; }
+    header p { font-size: 20px; color: #aaa; }
+    .download-btn {
+      display: inline-block;
+      margin: 12px 8px;
+      padding: 12px 20px;
+      background: #ffce00;
+      color: #111;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .download-btn:hover { background: #fff; color: #ffce00; transform: scale(1.05); }
+
+    section {
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #00c6ff;
+      border-left: 4px solid #00c6ff;
+      padding-left: 10px;
+    }
+
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 10px; position: relative; padding-left: 25px; }
+    ul li::before { content: "✔"; position: absolute; left: 0; color: #00c6ff; }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px 12px;
+      padding: 10px 16px;
+      background: #00c6ff;
+      color: #111;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover { background: #fff; color: #00c6ff; transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <div class="container" id="cv-container">
+    <div class="location">Amman, Jordan</div>
+
+    <header>
+      <img src="C:\Users\Hb\Desktop\cv\mooooo9166372570793095737_n.jpg" alt="Profile Picture">
+      <h1>Mohamed Al-Kurdi</h1>
+      <p>Experienced Barista</p>
+      <div class="download-btn" onclick="downloadPDF()">⬇️ Download CV PDF</div>
+      <div class="download-btn" onclick="document.getElementById('contact-section').scrollIntoView({behavior:'smooth'});">📩 Contact Me</div>
+    </header>
+
+    <section class="fade-section">
+      <h2>About Me</h2>
+      <p>
+        I am an experienced Barista with over 5 years of professional experience
+        crafting high-quality coffee, providing excellent customer service, 
+        and creating welcoming experiences for every customer. Skilled in 
+        working in various cafés from multinational chains to small specialty cafés.
+      </p>
+    </section>
+
+    <section class="fade-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>☕ Use of professional coffee-making equipment (Proficiency level: Very Good)</li>
+        <li>💵 Handling cash and financial transactions (Proficiency level: Good)</li>
+        <li>💬 Excellent communication skills (verbal and written)</li>
+        <li>👥 Ability to work in a team and support colleagues</li>
+        <li>🔄 Quick learner and adaptable to new work environments</li>
+        <li>📈 Commitment to personal development and learning new skills</li>
+        <li>🤝 Self-reliant and responsible</li>
+        <li>🔧 Multitasking</li>
+        <li>💬 English language: Good</li>
+      </ul>
+    </section>
+
+    <section class="fade-section">
+      <h2>Experience</h2>
+      <ul>
+        <li>Barista at Astralab Company, Amman, Jordan</li>
+        <li>Barista at Starbucks, Amman, Jordan</li>
+        <li>Barista at several small cafés across Amman</li>
+        <li><strong>Nebo Coffee – Specialty Coffee Roastery</strong>
+          <ul>
+            <li>Q Grader Training → Q Grader</li>
+            <li>Specialist in specialty coffee tasting ☕</li>
+            <li>Acquired advanced experience in tasting and analyzing coffee to identify origin, roast levels, and unique flavor profiles</li>
+            <li>Provide professional recommendations to customers based on each coffee’s characteristics</li>
+            <li>Handle carefully selected beans from top global farms, ensuring high-quality preparation and service standards</li>
+            <li>Participate in workshops and educational events to promote specialty coffee culture among clients and colleagues</li>
+            <li>Develop a deep understanding of flavors and sensory impact for each coffee type, reflecting precise analytical skills and passion for the field</li>
+          </ul>
+        </li>
+        <li>Over 5 years of professional experience in coffee preparation, customer service, and café management</li>
+      </ul>
+    </section>
+
+    <section class="fade-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Extensive experience working in various coffee establishments, from multinational chains to local specialty cafés</li>
+        <li>Skilled in preparing a wide range of coffee beverages with high consistency and quality</li>
+        <li>Proven ability to train and support team members, improving overall café performance</li>
+        <li>Long-standing experience in the barista field across multiple reputable workplaces</li>
+      </ul>
+    </section>
+
+    <section class="fade-section">
+      <h2>Personal Projects</h2>
+      <ul>
+        <li>Small web development projects – Frontend/Backend 💻</li>
+        <li>Personal experience in digital marketing and e-commerce 📈</li>
+        <li>Short experience in Forex trading and personal investment 💹</li>
+      </ul>
+    </section>
+
+    <section class="fade-section">
+      <h2>Interests</h2>
+      <ul>
+        <li>Specialty coffee culture ☕</li>
+        <li>Continuous learning and skill development 📚</li>
+        <li>Technology and practical experiments 💡</li>
+      </ul>
+    </section>
+
+    <section class="fade-section">
+      <h2>Certificates</h2>
+      <ul>
+        <li>High School Diploma – Tawjihi, Jordan 🎓</li>
+      </ul>
+    </section>
+
+    <section class="contact fade-section" id="contact-section">
+      <h2>Contact</h2>
+      <a href="hamoudh.link66@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/mohed-al-kordi-934a89261">🔗 LinkedIn</a>
+      <a href="https://github.com/Anonymous56430">💻 GitHub</a>
+      <a href="https://www.instagram.com/m0hammed_al.kurdi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">📸 Instagram</a>
+      <a href="tel:+97433666150">📞 +97433666150</a>
+      <a href="tel:+962782542970">📞 +962782542970</a>
+    </section>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+
+    function downloadPDF() {
+      const element = document.getElementById('cv-container');
+      const opt = {
+        margin: 0.3,
+        filename: 'CV-Mohamed-Al-Kurdi.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+</html>
